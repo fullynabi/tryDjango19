@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>{{ title }} <-- Templates is Working</h1>
+
+{% for obj in object_list %}
+
+{{ obj.id }} <br/>
+{{ obj.content }} <br/>
+{{ obj.updated }} <br/>
+{{ obj.timestamp }} <br/>
+{{ obj.id }} <br/>
+
+{% endfor %}
+</body>
+</html>
