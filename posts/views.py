@@ -1,10 +1,10 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-__author__ = 'nabi'
-
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def post_home(request):
-    return HttpResponse("<H1> Hello~! The First~!</h1>")
+# Create your views here.
 
+def post_home(request):
+    return HttpResponse("<h1> Hello, The First~!</h1>")
+
+# def post_two(request):
+#     return HttpResponse("<h1> Hello, The Two 222~!")

@@ -1,5 +1,5 @@
 """
-WSGI config for tryDjango19 project.
+WSGI config for TryDjango19 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tryDjango19.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "TryDjango19.settings")
 
 application = get_wsgi_application()

@@ -1,4 +1,4 @@
-"""tryDjango19 URL Configuration
+"""TryDjango19 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.9/topics/http/urls/
@@ -13,15 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
+from django.conf.urls import url
 from django.contrib import admin
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
-    url(r'^posts/', include("posts.urls")),
-        # url(r'^posts/$', "<appname>.views.<function_name>"),
-        # url(r'^posts/$', posts.views.posts_home ),
-        # url(r'^posts/', include("posts.urls")),
+    url(r'^posts/$', "posts.views.post_home"),
 
 ]
